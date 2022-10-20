@@ -105,6 +105,7 @@ print( "다음 문장 실행" )
 
 print( "-" )
 
+#Q1. 입력한 데이터가 3의 배수인 경우 출력하시오.
 num = int(input("수 입력: "))
 
 if num % 3 == 0:
@@ -112,15 +113,17 @@ if num % 3 == 0:
 
 print( "-" )
 
+#Q2. 수를 입력받아 짝수, 홀수를 구분하여 출력하시오.
 num = int(input("수 입력: "))
 
 if num % 2 == 0:
     print(f"{num}은(는) 짝수")
-if num % 2 == 1:
+if num % 2 == 1:    # if num2 % 2 != 0:
     print(f"{num}은(는) 홀수")
 
 print( "-" )
 
+#Q3. 두 수를 입력받아 큰 수를 출력하시오.
 num1 = int(input("수 입력: "))
 num2 = int(input("수 입력: "))
 
@@ -131,8 +134,13 @@ if num1 < num2:
 
 print( "-" )
 
+#Q4. 절대값을 구하는 프로그램을 작성하시오.
 num = int(input("수 입력: "))
-print(f"{num}의 절대값은 {-num}")
+
+if num > 0:
+    print(f"{num}의 절대값은 {num}")
+if num < 0:
+    print(f"{num}의 절대값은 {-num}")
 
 
 
