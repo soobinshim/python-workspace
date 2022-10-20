@@ -106,7 +106,7 @@ print( "다음 문장 실행" )
 print( "-" )
 
 #Q1. 입력한 데이터가 3의 배수인 경우 출력하시오.
-num = int(input("수 입력: "))
+#num = int(input("수 입력: "))
 
 if num % 3 == 0:
     print( f"{num}은(는) 3의 배수" )
@@ -114,7 +114,7 @@ if num % 3 == 0:
 print( "-" )
 
 #Q2. 수를 입력받아 짝수, 홀수를 구분하여 출력하시오.
-num = int(input("수 입력: "))
+#num = int(input("수 입력: "))
 
 if num % 2 == 0:
     print(f"{num}은(는) 짝수")
@@ -124,8 +124,8 @@ if num % 2 == 1:    # if num2 % 2 != 0:
 print( "-" )
 
 #Q3. 두 수를 입력받아 큰 수를 출력하시오.
-num1 = int(input("수 입력: "))
-num2 = int(input("수 입력: "))
+#num1 = int(input("수 입력: "))
+#num2 = int(input("수 입력: "))
 
 if num1 > num2:
     print(f"{num1}이(가) 더 큰 수")
@@ -135,14 +135,63 @@ if num1 < num2:
 print( "-" )
 
 #Q4. 절대값을 구하는 프로그램을 작성하시오.
-num = int(input("수 입력: "))
+#num = int(input("수 입력: "))
 
 if num > 0:
     print(f"{num}의 절대값은 {num}")
 if num < 0:
     print(f"{num}의 절대값은 {-num}")
 
+#Q5. 날짜를 입력받아 요일을 구하시오.
+    #단, 1 일은 무조건 월요일이다. 7 일은 일요일, 8 일은 다시 월요일
+    #어떤 값을 입력받든 요일이 정확히 출력되게 만드시오.
 
+num = int(input("날짜 입력: "))
+
+if num % 7 == 1:
+    print(f"{num}일은 월요일")
+if num % 7 == 2:
+    print(f"{num}일은 화요일")
+if num % 7 == 3:
+    print(f"{num}일은 수요일")
+if num % 7 == 4:
+    print(f"{num}일은 목요일")
+if num % 7 == 5:
+    print(f"{num}일은 금요일")
+if num % 7 == 6:
+    print(f"{num}일은 토요일")
+if num % 7 == 0:
+    print(f"{num}일은 일요일")
+
+#Q6. 세 수를 입력받아 큰 수를 출력하시오.
+
+num1 = int(input("수 입력: "))
+num2 = int(input("수 입력: "))
+num3 = int(input("수 입력: "))
+
+if num1 > num2 and num1 > num3:
+    print(f"{num1}이(가) 제일 큰 수")
+if num2 > num1 and num2 > num3:
+    print(f"{num2}이(가) 제일 큰 수")
+if num3 > num1 and num3 > num1:
+    print(f"{num3}이(가) 제일 큰 수")
+
+#Q7. 두 수를 입력받아 큰 수가 짝수이면 출력하시오.
+num1 = int(input("수 입력: "))
+num2 = int(input("수 입력: "))
+
+if num1 > num2 and num1 % 2 == 0:
+    print(f"{num1}은(는) 큰 수이며 짝수")
+if num2 > num1 and num2 % 2 == 0:
+    print(f"{num2}은(는) 큰 수이며 짝수")
+
+#Q8. 두 수를 입력받아 합이 짝수이고 3의 배수인 수를 출력하시오.
+num1 = int(input("수 입력: "))
+num2 = int(input("수 입력: "))
+sum = num1 + num2
+
+if sum % 2 == 0 and sum % 3 == 0:
+    print(f"{num1}+{num2}는(은) {sum}이며 짝수이고 3의 배수이다")
 
 
 
