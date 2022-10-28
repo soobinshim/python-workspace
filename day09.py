@@ -1,4 +1,4 @@
-
+'''
 ls = []
 for i in range(3):
     value = input(f"{i+1}번째 입력: ")
@@ -110,13 +110,18 @@ ls = [[1,2,3],[4,5,6],[7,8,9]]
 print(ls[0][0])
 print(ls[1])
 print(ls[2])
-
+'''
 
 #Q3.
 ls = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
 for i in ls:
     for j in i:
         print(j, end="\t")
+    print()
+
+for i in range(3):      # range(len(ls))
+    for j in range(4):  # range(len(ls[i])
+        print(ls[i][j], end="\t")
     print()
 
 
